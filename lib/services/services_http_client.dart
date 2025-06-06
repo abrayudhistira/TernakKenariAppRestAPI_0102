@@ -24,7 +24,7 @@ class ServicesHttpClient {
     }
   }
 
-  Future<http.Response> postiWithToken(String endpoint, Map<String, dynamic> body) async {
+  Future<http.Response> postWithToken(String endpoint, Map<String, dynamic> body) async {
     final url = Uri.parse('$baseUrl/$endpoint');
     final token = await secureStorage.read(key: "token");
     try {
