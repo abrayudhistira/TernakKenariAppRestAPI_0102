@@ -1,4 +1,6 @@
 import 'package:bloc/bloc.dart';
+import 'package:canary_template/data/model/response/auth_response_model.dart';
+import 'package:canary_template/data/repository/auth_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'login_event.dart';
